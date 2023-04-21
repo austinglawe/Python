@@ -89,7 +89,94 @@ Answer: print(17*6 - (9*7 + 5*7))
    print((1 + 2 + 4)/13)
    The final one looks fine.
 
+
+
 ## Variables and Assignment Operators 2.5
+
+mv_population = 74728
+   ^          ^   ^
+   |          |   |
+Variable      |   variable
+name        assignment operator
+
+x = y is not equal to y = x
+whatever is on the left side of assignment operator is now a name for the variable on the right side
+but this works out:
+x = 2
+y = x
+print(y)
+OUTPUT is 2
+
+if you try to access a value of a variable that was never defined, you will get this error message
+NameError: name 'z' is not defined
+for example:
+x = 2
+y = z
+print(y)
+OUTPUT is NameError: name 'z' is not defined
+
+For assigning variables this
+x = 2
+y = 3
+z = 5
+is the same as
+x, y, z = 2, 3, 5
+
+BE descriptive with variable names
+
+-only use ordinary letters, numbers, or in your variable's names
+like:
+table_6
+table6
+NOT THESE:
+table 6 - because it can't have spaces
+6table - needs to start with letter or underscore (_)
+-you can't use reserved words or build-in identifiers
+-you should use all lowercase letters and underscores to separate words
+---Table of Python's reserved words --> https://docs.python.org/3/reference/lexical_analysis.html#keywords
+And the keywords are:
+False        await         else        import         pass
+None         break         except      in             raise
+True         class         finally     is             return
+and          continue      for         lambda         try
+as           def           from        nonlocal       while
+assert       del           global      not            with
+async        elif          if          or             yield
+
+You can reassign variable names and they will be the most recently used:
+mv_population = 74728
+mv_population = 78128
+print(mv_population) # 78128
+                     ^
+                   this can be used to say "the answer is..."
+mv_population = 74728
+mv_population = mv_population + 4000 - 600
+# 78128
+
+or 
+mv_popultaion = 74728
+mv_population += 4000 - 600
+
+the += is to say the same as the above example, (mv_population = mv_population + 4000 - 600)
++=       *=          %=
+-=       /=          **=
+Other Assignment Operators ---> https://www.programiz.com/python-programming/operators
+== (is equal to)
+!= (is not equal to)
+> (Greater than)
+< (Less than)
+>= (Greater than or equal to)
+<= (Less than or equal to)
+
+
+
+## Quiz: Variables and Assignment Operators
+
+--Now it's your turn to work with variables. The comments in this quiz (the lines that begin with #) have instructions for creating and modifying variables. After each comment write a line of code that implements the instruction.
+(Note that this code uses scientific notation to define large numbers. 4.445e8 is equal to 4.445 *10* * 8 which is equal to 444500000.0)
+
+
+
 
 
 
