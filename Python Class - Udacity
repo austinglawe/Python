@@ -231,6 +231,109 @@ Now we add a new 4th line to this code, that assigns a new value to the rabbits 
 
 ## Integers and Floats  2.8
 
+print(3/4)
+0.75
+
+int - integer (whole number. not decimal points)
+float is a real number that allows us to use fractional values
+(decimals or floating point values
+they are two data types and used as:
+int
+float
+
+----check types by using type, for example:
+print(type(4))
+<class 'int'>
+
+print(type(4.3))
+<class 'float'>
+
+operations with an int and a float ALWAYS produces a float
+print(3 + 2.5)
+5.5
+
+print(int(49.7))
+49
+when converting a float to an int, the part after the decimal is lopped off. no rounding occurs
+
+when converting an int to a float, it will always have a decimal
+print(float(3520 + 3239))
+6759.0 
+
+Integers can be used for
+--number of people
+
+all the floats in python are more of an approximation
+for instance
+print(0.1 + 0.1 + 0.1)
+0.30000000000000004
+
+it's not exactly 0.3 like you might assume, because python is slightly more for all floats
+(Floating Point Approximations) - more here -------> https://docs.python.org/3/tutorial/floatingpoint.html
+
+print(4 + 5)
+is the same as 
+print(                                            4 + 5)
+but they are not equally good lines of code, because they are harder to read
+
+whenever you use the print function, put the ( directly after print like so:
+print(
+and don't put spaces immediately inside of the paratheses either
+so don't do this
+print( 3 + 5) --- the immediate space within the paratheses should be avoided
+don't do this
+print (3 + 5) --- the ( is not directly placed after print
+if order of operations are needed, it may be better to keep the higher priority closer together too
+like so:
+print(3*7 - 1)  ----instead of  print(3 * 7 - 1)
+or 
+print(4 + 5*9)  ---instead of print(4 + 5 * 9)
+try to limit yourself to lines of code of 79-99 characters long
+PEP8 Guidelines is good for helping others and yourself read
+PEP8 Guidelines ----> https://peps.python.org/pep-0008/
+https://github.blog/2022-06-08-sunsetting-atom/
+https://softwareengineering.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width
+
+
+
+## Quiz: Integers and Floats  2.9
+      int vs. float
+      Quiz Question
+--In the fishy situation below, some of the quantities are of type int and some are of type float. Check all the ones that should be of type float.
+[] How many people came on your fishing trip
+[x] Length of a fish you caught, in meters
+[] Number of fish caught on a fishing trip
+[x] Length of time it took to catch the first fish, in hours
+
+What happens if you divide by zero in Python? Try it out! Test run this code and see what happens.
+The error below appears:
+Traceback (most recent call last): File "/tmp/workspaces/4f950625-cb2a-463a-b969-981824be6c26/quiz.py", line 1, in <module> print(5/0) ZeroDivisionError: division by zero
+
+##NOTE:
+Here's what you should have seen when you submitted the Divide by Zero code above:
+##Traceback (most recent call last):
+  File "/tmp/vmuser_tnryxwdmhw/quiz.py", line 1, in <module>
+    print(5/0)
+
+ZeroDivisionError: division by zero```
+
+Traceback means "What was the programming doing when it broke"!   This part is usually less helpful than the very last line of your error.  
+Though you can dig through the rest of the error, looking at just the final line `ZeroDivisionError`, and the message says we divided by zero. Python is enforcing the rules of arithmetic! 
+In general, there are two types of errors to look out for
+
+* **Exceptions**
+* **Syntax**
+
+An **Exception** is a problem that occurs when the code is running, 
+but a 'Syntax Error' is a problem detected when Python checks the code before it runs it.  
+For more information, see the Python tutorial page on [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html).
+
+
+
+## Booleans, Comparison Operators, and Logical Operators
+
+
+
 
 
 
