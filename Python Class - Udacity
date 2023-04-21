@@ -1,1 +1,100 @@
 ####    Introduction to Python Programming    ####
+
+## Why Python Programming
+History of Python - https://en.wikipedia.org/wiki/History_of_Python
+
+Programming in python
+- Case Sensitive
+- Spacing matters
+- Use error messages to help you learn
+
+______________________________________________________________________________
+Part 2. Data Types and Operators
+
+
+## Introduction 2.1
+
+-- Data Types
+- Integers, Floats, Booleans, Strings
+-- Operators
+- Arithmetic, Assignment, Assignment, Comparison, Logical
+-- Built-In Functions, Type Conversion
+-- Whitespace and Style Guidelines
+
+print()
+
+
+
+## Arithmetic Operators 2.2
+
++ (Addition)
+- (subtraction) 
+* (Multiplication)
+/ (Division)
+% (Modulo, the remainder after dividing)
+// (Integer Division, divides and rounds down to the nearest integer)
+** Exponentatiation (note that ^ does not do this operation, as you might have seen in other languages)
+^ (bitwise XOR) not exponentatiation
+
+-- Regular order of operations apply
+-- Math Refresher --> https://www.nctm.org/classroomresources/
+-- More Special operators ---> https://wiki.python.org/moin/BitwiseOperators
+
+print(3+5)
+8 (output)
+
+print(7 // 2)
+3
+
+print(-7 // 2)
+-4
+
+("//" always rounds DOWN)
+
+
+
+## Quiz: Arithmetic Operators
+
+It's time to try a calculation in Python!
+--My electricity bills for the last three months have been $23, $32 and $64. What is the average monthly electricity bill over the three month period? Write an expression to calculate the mean, and use print() to view the result.
+# Write an expression that calculates the average of 23, 32 and 64
+# Place the expression in this print statement
+
+Answer: print((23 + 32 + 64)/3)
+
+-In this quiz you're going to do some calculations for a tiler. Two parts of a floor need tiling. One part is 9 tiles wide by 7 tiles long, the other is 5 tiles wide by 7 tiles long. Tiles come in packages of 6.
+-[1]-How many tiles are needed?
+-[2]-You buy 17 packages of tiles containing 6 tiles each. How many tiles will be left over?
+
+# Fill this in with an expression that calculates how many tiles are needed.
+
+Answer: print(9*7 + 5*7)
+
+# Fill this in with an expression that calculates how many tiles will be left over.
+
+Answer: print(17*6 - (9*7 + 5*7))
+
+--Which of these lines of Python code are well formatted? How would you improve the readability of the codes that don't use good formatting? (Choose all that apply)
+[] print(((3+ 32))+ -15//2)
+[x] print((17 - 6)%(5 + 2))
+[] print ((1 + 2 + 4) / 13)
+[x] print(4/2 - 7*7)
+
+####FEEDBACK:
+###Well done on thinking about good Python formatting! Practicing good formatting when coding is the best way to get good at it. Here is what we thought:
+   The first one isn't well formatted; it has some extra spaces, extra parentheses and an extra +. It would look much clearer as
+   print((3 + 32) - 15//2)
+   The second one looks good, it's got extra spaces around the - and + to help with readability.
+   The third one looks quite clear, though it could be a bit better by removing the space between print and ( and the spaces around the /.
+   print((1 + 2 + 4)/13)
+   The final one looks fine.
+
+## Variables and Assignment Operators 2.5
+
+
+
+
+
+
+
+
