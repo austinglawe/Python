@@ -53,7 +53,7 @@ print(-7 // 2)
 
 
 
-## Quiz: Arithmetic Operators
+## Quiz: Arithmetic Operators    2.3
 
 It's time to try a calculation in Python!
 --My electricity bills for the last three months have been $23, $32 and $64. What is the average monthly electricity bill over the three month period? Write an expression to calculate the mean, and use print() to view the result.
@@ -170,7 +170,7 @@ Other Assignment Operators ---> https://www.programiz.com/python-programming/ope
 
 
 
-## Quiz: Variables and Assignment Operators
+## Quiz: Variables and Assignment Operators  2.6
 
 --Now it's your turn to work with variables. The comments in this quiz (the lines that begin with #) have instructions for creating and modifying variables. After each comment write a line of code that implements the instruction.
 (Note that this code uses scientific notation to define large numbers. 4.445e8 is equal to 4.445 *10* * 8 which is equal to 444500000.0)
@@ -330,27 +330,95 @@ For more information, see the Python tutorial page on [Errors and Exceptions](ht
 
 
 
-## Booleans, Comparison Operators, and Logical Operators
+## Booleans, Comparison Operators, and Logical Operators    2.10
+
+bool - A boolean is a data type that can have a value of TRUE or FALSE
+--boolean Algebra is a branch of algebra dealing with true or false
+  George Bool, exists in almost every line of computer code
+
+Can be used like this (though true and false usually should be used for more of a purpose):
+the_sun_is_up = True
+the_sun_is_blue = False
+
+x = 42 > 43
+print(x)
+#False
+
+Comparison Operators:
+< (less than)
+> (greater than)
+<= (less than or equal to)
+>= (greater than or equal to)
+== (equal to) #notice the 2 = signs
+!= (not equal to)
+Logical Operators:
+and  (evaluates if both sides are true)
+or   (evaluates if at least one side is true) 
+not  (inverses a boolean type)
+
+for example:
+age = 14
+is_teen = age > 12 and age < 20           (is_teen = 14 > and 14 < 20)
+print(is_teen)
+# True
+
+another:
+age = 14
+not_teen = not (age > 12 and age < 20)
+print(not_teen)
+# False
+
+Symbol Use Case	   Bool	      Operation
+5 < 3	               False	       Less Than
+5 > 3	               True	       Greater Than
+3 <= 3	            True	       Less Than or Equal To
+3 >= 5	            False	       Greater Than or Equal To
+3 == 5	            False        Equal To
+3 != 5	            True	       Not Equal To
+
+Logical Use	         Bool	        Operation
+5 < 3 and 5 == 5	   False	         and - Evaluates if all provided statements are True
+5 < 3 or 5 == 5	   True	         or - Evaluates if at least one of many statements is True
+not 5 < 3	         True	         not - Flips the Bool Value
+
+More on George Bool here ----> https://www.irishtimes.com/news/science/how-george-boole-s-zeroes-and-ones-changed-the-world-1.2014673
 
 
 
+## Quiz: Booleans, Comparison Operators, and Logical Operators 2.11
+
+Quiz: Which is denser, Rio or San Francisco?
+Try comparison operators in this quiz! This code calculates the population densities of Rio de Janeiro and San Francisco.
+--Write code to compare these densities. Is the population of San Francisco more dense than that of Rio de Janeiro? 
+  Print True if it is and False if not.
+
+sf_population, sf_area = 864816, 231.89
+rio_population, rio_area = 6453682, 486.5
+
+san_francisco_pop_density = sf_population/sf_area
+rio_de_janeiro_pop_density = rio_population/rio_area
+
+# Write code that prints True if San Francisco is denser than Rio, and False otherwise
+
+san_francisco_vs_rio_de_janeiro = san_francisco_pop_density > rio_de_janeiro_pop_density
+print(san_francisco_vs_rio_de_janeiro)
+
+###Your comparison is correct. Nice work! I calculated my answer like this: print(san_francisco_pop_density > rio_de_janeiro_pop_density)
+   Another is:
+         if (san_francisco_pop_density > rio_de_janeiro_pop_density):
+                  print (True)
+         else:
+                  print (False)
+    
+--Why do you think Python uses == for checking equality rather than =?
+[] So that it is two characters long, like != is
+[x] Because = is used to assign variables
+[] Either one works
+[] Because = is used to check if two values are approximately equal
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Strings     2.13
 
 
 
