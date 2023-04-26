@@ -1,4 +1,5 @@
 ####    Introduction to Python Programming    ####
+
 This course is taught by Juno Lee.
 https://www.udacity.com/course/introduction-to-python--ud1110
 
@@ -808,11 +809,19 @@ More advanced students can learn more about the formal syntax for using the form
 [] islower() returns True
 [] islower() returns false
 [x] An error occurs
----That's right, an error occurs. The islower() method is an attribute of string methods, but not floats. Different types of object have methods specific to their type. For example, floats have the is_integer() method which strings don't have.
+---That's right, an error occurs. The islower() method is an attribute of string methods, but not floats. Different types of object have 
+methods specific to their type. For example, floats have the is_integer() method which strings don't have.
 You can learn more about strings and string methods by looking at the string method documentation.
-You will find that the documentation is one of the most valuable resources for writing code, and not only when it comes to strings or writing code in Python! By reading and searching the documentation you can learn about data types and built-in functions as well as how to use them.
+You will find that the documentation is one of the most valuable resources for writing code, and not only when it comes to strings or 
+writing code in Python! By reading and searching the documentation you can learn about data types and built-in functions as well as how to use them.
 Give it a try now! Look up a few string methods (using the link above) and try them out in the programming playground below (using the Test Run button).
 ---> https://docs.python.org/3/library/stdtypes.html#string-methods
+
+--
+# Browse the complete list of string methods at:
+# https://docs.python.org/3/library/stdtypes.html#string-methods
+# and try them out here
+
 
 --Use the coding space below to practice using the format() string method. There are no right or wrong answers here, just practice!
 # Write two lines of code below, each assigning a value to a variable
@@ -836,11 +845,15 @@ print(bob + " " + rob.format())
 ## Another String Method - Split    2.21
 
 Another important string method: split()
-A helpful string method when working with strings is the .split method. This function or method returns a data container called a list that contains the words from the input string. We will be introducing you to the concept of lists in the next video.
+A helpful string method when working with strings is the .split method. This function or method returns a data container called a list that 
+contains the words from the input string. We will be introducing you to the concept of lists in the next video.
 
-The split method has two additional arguments (sep and maxsplit). The sep argument stands for "separator". It can be used to identify how the string should be split up (e.g., whitespace characters like space, tab, return, newline; specific punctuation (e.g., comma, dashes)). If the sep argument is not provided, the default separator is whitespace.
+The split method has two additional arguments (sep and maxsplit). The sep argument stands for "separator". It can be used to identify how the 
+string should be split up (e.g., whitespace characters like space, tab, return, newline; specific punctuation (e.g., comma, dashes)). If the 
+sep argument is not provided, the default separator is whitespace.
 
-True to its name, the maxsplit argument provides the maximum number of splits. The argument gives maxsplit + 1 number of elements in the new list, with the remaining string being returned as the last element in the list. You can read more about these methods in the Python documentation too.
+True to its name, the maxsplit argument provides the maximum number of splits. The argument gives maxsplit + 1 number of elements in the new 
+list, with the remaining string being returned as the last element in the list. You can read more about these methods in the Python documentation too.
 
 Here are some examples for the .split() method.
 
@@ -876,9 +889,12 @@ Output is:
 
 ## Quiz: String Methods Practice 2.22
 
-Below, we have a string variable that contains the first verse of the poem, If by Rudyard Kipling. Remember, \n is a special sequence of characters that causes a line break (a new line).
+Below, we have a string variable that contains the first verse of the poem, If by Rudyard Kipling. Remember, \n is a special sequence of characters 
+that causes a line break (a new line).
 ---> https://en.wikipedia.org/wiki/If%E2%80%94
-verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
+verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  
+But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, 
+don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
 Use the code editor below to answer the following questions about verse and use Test Run to check your output in the quiz at the bottom of this page.
 ---> https://docs.python.org/2/library/string.html
 1. What is the length of the string variable verse?
@@ -888,7 +904,9 @@ Use the code editor below to answer the following questions about verse and use 
 
 You will need to refer to Python's string methods documentation.
 ---
-verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
+verse = "If you can keep your head when all about you\n  Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n  
+But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n  Or being lied about, don’t deal in lies,\nOr being hated, 
+don’t give way to hating,\n  And yet don’t look too good, nor talk too wise:"
 print(verse)
 
 # Use the appropriate functions and methods to answer the questions above
