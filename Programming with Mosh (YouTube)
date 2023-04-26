@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=_uQrJ0TkZlc&ab_channel=ProgrammingwithMosh
+
+Your First Python Code:
+
+--INPUT:
+print("Austin Glawe")
+print("o----")
+print(" ||||")
+print('*' * 10)
+
+---OUTPUT:
+Austin Glawe
+o----
+ ||||
+**********
+
