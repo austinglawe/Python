@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=_uQrJ0TkZlc&ab_channel=ProgrammingwithMosh
 
-Your First Python Code:
+## Your First Python Code:
 
 --INPUT:
 print("Austin Glawe")
@@ -13,4 +13,31 @@ Austin Glawe
 o----
  ||||
 **********
+
+
+
+## Variables
+
+price = 10
+price = 20
+print(price)
+# price = 20 now because code is read line by line and can be updated
+rating = 4.9
+my_name = 'Austin'
+is_published = True
+# Python is sensitive to upper- and lowercase characters
+# Always use lowercase letters
+# but python words False and True need to be uppercase for T or F
+# _ (underscores are used instead of spaces)
+# price, rating, my_name are all variables
+# Integer is a whole number (like price)
+# Float is a number with a decimal (like rating)
+# Strings are characters that are not numbers
+# Boolean values are True or False
+
+# We check in a patient named John Smith. He's 20 years old and is a new patient.
+# Create 3 variables to define these factors above
+name = "John Smith"
+age = 20
+is_new = True
 
