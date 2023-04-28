@@ -267,7 +267,7 @@ OUTPUT: 3.33333333333335
 ## Integer
 print(10 // 3)
 OUTPUT: 3
-## to get remainder of division - modulous
+## to get remainder of division - modulo
 print(10 % 3)
 OUTPUT: 1
 ## Exponents (powers) below is 10 to the power of 3
@@ -296,8 +296,26 @@ x *= 3
 print(x)
 OUTPUT: 30
 
+x = 10
+x **= 3
+print(x)
+OUTPUT: 1000
+
+x = 10
+x /= 3
+print(x)
+OUTPUT: 3.3333333335
+
+x = 10
+x //= 3
+print(x)
+OUTPUT: 3
 
 
+x = 10
+x %= 3
+print(x)
+OUTPUT: 1
 
 
 
