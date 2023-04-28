@@ -114,6 +114,29 @@ print(name + ", your weigh " + weight_kg + " kg.")
 
 
 
+## If you need to have an apostrophe in the middle of a string. Use double quotes ("")
+## Otherwise it will mess things up and when the apostrophe appears, it will think that it's the end of your string
+course = "Python's Course for Beginners"
+print(course)
+
+## if you need to have double quotes then use single quotes like so:
+course = 'Python for "Beginners"'
+print(course)
+
+## You can also use triple quotes (''' ''') - to define a string with multiple lines
+course = '''
+Hi John,
+
+Here is our first email to you.
+
+Thank you,
+The support team
+
+'''
+print(course)
+
+
+
 
 
 
