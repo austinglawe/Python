@@ -483,24 +483,148 @@ OUTPUT:
 Down payment: $200000
 
 
+##### Logical Operators
+#AND#
+## if applicant has high income AND good income
+###eligible for a loan
+
+has_high_income = True
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+OUTPUT: Eligible for loan
 
 
+has_high_income = True
+has_good_credit = False
+
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+OUTPUT: Sorry, not eligible for loan
 
 
+has_high_income = False
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+OUTPUT: Sorry, not eligible for loan
 
 
+has_high_income = False
+has_good_credit = False
+
+if has_high_income and has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+OUTPUT: Sorry, not eligible for loan
 
 
+##or
+
+has_high_income = True
+has_good_credit = True
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+    
+OUTPUT: Eligible for loan
 
 
+has_high_income = False
+has_good_credit = True
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+    
+OUTPUT: Eligible for loan
 
 
+has_high_income = True
+has_good_credit = False
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+    
+OUTPUT: Eligible for loan
 
 
+has_high_income = False
+has_good_credit = False
+
+if has_high_income or has_good_credit:
+    print("Eligible for loan")
+else:
+    print("Sorry, not eligible for loan")
+    
+OUTPUT: Sorry, not eligible for loan
 
 
+## and : both True
+## or : at least one True
+## not : makes anything inverse
+
+a = True
+b = not False
+
+if a and b:
+    print('hey')
+else:
+    print('nope')
+
+OUTPUT: hey
 
 
+## Comparison Operators
+## if temperature is greater than 30, it's a hot day
+## otherwise if it's less than 10, it's a cold day
+## otherwise, it's neither hot nor cold
+
+temp = 31
+
+if temp > 30:
+    print("It's a hot day")
+elif temp < 10:
+    print("It's a cold day")
+else:
+    print("It's neither hot nor cold")
+OUTPUT: It's a hot day  
+
+
+temp = 29
+
+if temp > 30:
+    print("It's a hot day")
+elif temp < 10:
+    print("It's a cold day")
+else:
+    print("It's neither hot nor cold")   
+OUTPUT: It's neither hot nor cold
+
+
+temp = 9
+
+if temp > 30:
+    print("It's a hot day")
+elif temp < 10:
+    print("It's a cold day")
+else:
+    print("It's neither hot nor cold")
+OUTPUT: It's a cold day
 
 
 
