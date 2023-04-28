@@ -202,6 +202,109 @@ msg = f'{first_name} [{last_name}] is a coder'
 print(msg)
 OUTPUT: John [Smith] is a coder
 
+## Calculate the number of characters in a string
+course = 'Python for Beginners'
+print(len(course))
+OUTPUT: 20
+
+## methods are like a function but the are whatever piece of information . then the method you want to execute
+## Print all characters in uppercase
+course = 'Python for Beginners'
+print(course.upper())
+print(course)
+OUTPUT: PYTHON FOR BEGINNERS
+Python for Beginners
+
+# This does not change what course is.
+
+## Print all characters in lowercase
+course = 'Python for Beginners'
+print(course.lower())
+
+## the find method locates the position of the first character you want to find
+## This method is case sensitive
+course = 'Python for Beginners'
+print(course.find('f'))
+OUTPUT: 7
+
+## In the case below, it will print where that string starts
+course = 'Python for Beginners'
+print(course.find('Beginners')
+OUTPUT: 11
+
+
+## To replace a string you can use the replace method. This method is also case sensitive.
+course = 'Python for Beginners'
+print(course.replace('Beginners', 'Albsolute Beginners'))
+OUTPUT: Python for Albsolute Beginners
+
+course = 'Python for Beginners'
+print(course.replace('P','J'))
+OUTPUT: Jython for Beginners
+
+## To see if a particular character or word is where you are looking; Boolean value is returned (True, False)
+course = 'Python for Beginners'
+print('Python' in course)
+OUTPUT: True
+
+course = 'Python for Beginners'
+print('python' in course)
+OUTPUT: False
+
+#### Arithmetic Operators
+## Addition
+print(10 + 3)
+OUTPUT: 13
+## Subtraction
+print(10 - 3)
+OUTPUT: 7
+## Multiplication
+print(10 * 3)
+OUTPUT: 30
+## Floating point number
+print(10 / 3)
+OUTPUT: 3.33333333333335
+## Integer
+print(10 // 3)
+OUTPUT: 3
+## to get remainder of division - modulous
+print(10 % 3)
+OUTPUT: 1
+## Exponents (powers) below is 10 to the power of 3
+print(10 ** 3)
+OUTPUT: 1000
+
+## Incrementing Numbers
+x = 10
+x = 10 + 3
+#print(x)
+#OUTPUT: 13
+
+## Augmented Assignment Operators do this in a shorter form
+x = 10
+x += 3
+print(x)
+OUTPUT: 13
+
+x = 10
+x -= 3
+print(x)
+OUTPUT: 7
+
+x = 10
+x *= 3
+print(x)
+OUTPUT: 30
+
+
+
+
+
+
+
+
+
+
 
 
 
