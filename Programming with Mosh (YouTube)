@@ -382,6 +382,121 @@ OUTPUT: 3
 # https://python.readthedocs.io/en/stable/library/math.html
 
 
+#### IF Statements (Conditions)
+## if it's hot
+    # It's a hot
+    # Drink plenty of water
+## Otherwise if it's cold
+    # It's a cold day
+    # Wear warm clothes
+## Otherwise
+    # It's a lovely day
+
+is_hot = True
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+print("Enjoy your day")
+
+OUTPUT:
+It's a hot day
+Drink plenty of water
+Enjoy your day
+
+
+#
+is_hot = False
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+else:
+    print("It's a cold day")
+    print("Wear warm clothes")
+print("Enjoy your day")
+
+OUTPUT:
+It's a cold day
+Wear warm clothes
+Enjoy your day
+
+
+
+
+#
+is_hot = False
+is_cold = False
+
+if is_hot:
+    print("It's a hot day")
+    print("Drink plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+
+OUTPUT:
+It's a lovely day
+Enjoy your day
+
+
+##### House Example
+## Price of a house is $1M
+### If the buyer has good credit, they need to put down 10%
+### Otherwise, they need to put down a 20% down payment
+
+good_credit = True
+
+if good_credit:
+    print("Down payment: $" + str(int(1000000 * .10)))
+else:
+    print("Down payment: $" + str(int(1000000 * .20)))
+    
+OUTPUT:
+Down payment: $100000
+
+
+
+good_credit = False
+
+if good_credit:
+    print("Down payment: $" + str(int(1000000 * .10)))
+else:
+    print("Down payment: $" + str(int(1000000 * .20)))
+
+OUTPUT:
+Down payment: $200000
+
+
+price = 1000000
+good_credit = False
+
+if good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down payment: ${int(down_payment)}")
+OUTPUT:
+Down payment: $200000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
