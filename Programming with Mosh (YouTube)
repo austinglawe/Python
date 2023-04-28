@@ -70,11 +70,47 @@ Traceback (most recent call last):
 TypeError: unsupported operand type(s) for -: 'int' and 'str'
 
 ## It is saying that you can't take and integer (2023) and subtract a string (input of age) from it
+## It would be like saying:
+## 2023 - '1995'
 ## Anything typed in an input terminal is ALWAYS a string.
 
 
 
 
+birth_year = input('Birth year: ')
+birth_year = int(birth_year)
+age = 2023 - birth_year
+print(age)
+
+
+## Other inputs are bool() [meaning True or False] and float() [number with a decimal]
+
+## Find the class (or type)
+
+birth_year = input('Birth year: ')
+print(type(birth_year))
+birth_year = int(birth_year)
+age = 2023 - birth_year
+print(type(age))
+print(age)
+
+Birth year: 1995
+<class 'str'>
+<class 'int'>
+28
+
+
+# Ask a user their weight (in pounds), convert it to kilograms
+# and then print it on the terminal
+
+name = input("Hello, what is your name?")
+weight = input("Hello " + name + ", it is nice to meet you."
+                                 "How much do you weigh in lbs?")
+
+weight_kg = int(weight) * 0.45
+weight_kg = str(weight_kg)
+
+print(name + ", your weigh " + weight_kg + " kg.")
 
 
 
