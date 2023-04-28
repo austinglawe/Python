@@ -41,3 +41,54 @@ name = "John Smith"
 age = 20
 is_new = True
 
+
+the input() function is a built in function.
+name = input('What is your name? ')
+ print ('Hi ' + name)
+# concatenating (combining) this string with another string
+
+
+# Ask what the name is of a person. Then ask their favorite color.
+# print these.
+name = input('What is your name? ')
+fav_color = input(name + ',what is your favorite color? ')
+print(name + "'s favorite color is " + fav_color)
+
+
+
+
+# We want to find your age based on an input of your birth year
+
+birth_year = input('Birth year: ')
+age = 2023 - birth_year
+print(age)
+## However this doesn't work, this error appears below:
+
+Traceback (most recent call last):
+  File "C:\Users\austi\PycharmProjects\HelloWorld1\app1.py", line 2, in <module>
+    age = 2023 - birth_year
+TypeError: unsupported operand type(s) for -: 'int' and 'str'
+
+## It is saying that you can't take and integer (2023) and subtract a string (input of age) from it
+## Anything typed in an input terminal is ALWAYS a string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
