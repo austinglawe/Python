@@ -136,10 +136,62 @@ The support team
 print(course)
 
 
+## Find the value of the first position in the string
+course = 'Python for Beginners'
+print(course[0])
+OUTPUT: P
 
+## You can also go from a negative position. It will start at the last character and go however many characters to the left
+course = 'Python for Beginners'
+print(course[-2])
+OUTPUT: r
 
+## To get multiple charcters
+course = 'Python for Beginners'
+print(course[0:3])
+OUTPUT: Pyt
+## The number before the colon (:) is inclusive, the number after it is exclusive
+## This means it will include everything before the colon and will only go to the point on the right of the colon
+## It will stop before printing the 3 spot (h)
+course = 'Python for Beginners'
+print(course[0:4])
+OUTPUT: Pyth
 
+## You can also start at a certain point in the string and have it return all values after that point
+## Like so:
+course = 'Python for Beginners'
+print(course[4:])
+OUTPUT: on for Beginners
 
+## And you can do the opposite to have the start and only go to a certain point.
+## Like so:
+course = 'Python for Beginners'
+print(course[:9])
+OUTPUT: Python fo
+
+## To take off the last Character, you can do this:
+course = 'Python for Beginners'
+print(course[:-1])
+OUTPUT: Python for Beginner
+
+## To print only the last given number of characters, you can do this:
+course = 'Python for Beginners'
+print(course[-6:])
+OUTPUT: inners
+
+## To copy or clone a string:
+course = 'Python for Beginners'
+print(course[:])
+## or
+course = 'Python for Beginners'
+another = course[:]
+print(another)
+
+## To start at a certain point in the string and also take off a piece of the ending
+## Here is an example:
+course = 'Python for Beginners'
+print(course[1:-1])
+OUTPUT: ython for Beginner
 
 
 
