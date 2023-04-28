@@ -317,6 +317,72 @@ x %= 3
 print(x)
 OUTPUT: 1
 
+## Operator Precedence or Order of Operations
+x = 10 + 3 * 2
+# x = 16
+## PEDMAS (Parentheses, Exponents, Division, Multiplication, Addition, Subtract
+## Parentheses
+## Exponentiation 2 ** 3
+## Multiplication or Division
+## Addition or Subtraction
+
+x = (8**2 + 4/2)**2 + 8/3 - 4*5
+print(x)
+OUTPUT: 4338.666666666667
+
+##The order of this goes as follows
+## x = (64 + 4/2)**2 + 8/3 - 4*5
+## x = (64 + 2)**2 + 8/3 - 4*5
+## x = (66)**2 + 8/3 - 4*5
+## x = 4356 + 8/3 - 4*5
+## x = 4356 + 8/3 - 20
+## x = 4356 + 2.6666666666666665 - 20
+## x = 4358.6666666666666665 - 20
+## x = 4338.666666666667
+### It rounds a little differently
+
+
+### Using some functions
+## Round
+x = 2.9
+print(round(x))
+OUTPUT: 3
+
+x = 2.4
+print(round(x))
+OUTPUT: 2
+
+x = 2.5
+print(round(x))
+OUTPUT: 2
+
+x = 2.51
+print(round(x))
+OUTPUT: 3
+
+## Absolute Value
+x = -2.51
+print(abs(x))
+
+
+### Python has modules (which are like stores for certain data)
+## Python has a math module for reusable functions for performing mathematical calculations
+import math
+## this is how you get the math module
+
+import math
+
+print(math.floor(2.9))
+OUTPUT: 2
+
+print(math.ceil(2.9))
+OUTPUT: 3
+
+## MATH Module methods
+# https://python.readthedocs.io/en/stable/library/math.html
+
+
+
 
 
 
