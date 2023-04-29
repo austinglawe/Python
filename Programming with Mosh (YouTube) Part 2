@@ -377,6 +377,69 @@ greet_user()
 
 
 
+### Parameters
+def greet_user(name):
+    print(f"Hi {name}!")
+    print("Welcome aboard")
+name = input("Hi, what's your name? ")
+
+greet_user(name)
+print("""
+""")
+name = input("Oh hey there. I didn't see you. And what is your name? ")
+greet_user(name)
+
+
+
+### Parameters vs. Arguments
+#### Parameters are the placeholder (or holes) that we define in
+#### our function for receiving information
+### Agruments are the actual piece of information we supply to these functions
+
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome aboard")
+
+greet_user("John", "Smith")
+
+### I think from what I am understanding..
+### parameters would be first_name, last_name in the function
+### Arguments would be "John" and "Smith" 
+
+
+
+### Keyword Arguments
+
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome aboard")
+
+greet_user("John", "Smith")
+## This comes back with: Hi John Smith!...
+## where as if you swithed the greet_user to this:
+## greet_user("Smith", "John")
+## you would return: Hi Smith John
+### these are positional arguments, their order MATTERS!!
+
+## a key word argument would work like so:
+greet_user(last_name="Smith", first_name="John")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
