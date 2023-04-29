@@ -626,6 +626,142 @@ else:
     print("It's neither hot nor cold")
 OUTPUT: It's a cold day
 
+## temp > 30 is an expression (boolean expression)
+## expression because it's a piece of code that produces a value
+
+## Operators are as follows:
+## > Greater than
+## < Less than
+## <= Less than or equal to
+## >= Greater than or equal to
+## == Equal to
+## = this is an assignement statement, so it will cause an error if put into a conditional statement like this one.
+    ### it would change the value of temp
+## != not equal to
+
+
+
+## if name is less than 3 characters long
+    ## name must be at least 3 characters
+## Otherwise if it's more than 50 characters long
+    ## name can be a maximum of 50 characters
+## Otherwise
+    ## name looks good
+
+name = input("Please enter your name here: ")
+
+if len(name) < 3:
+    print("Name must be at least 3 characters long")
+elif len(name) > 50:
+    print("Name cannot be more than 50 characters long")
+else:
+    print(f"Nice to meet you {name}, your name looks good!")
+
+
+###############################NOT WORKING########################
+### Build a program that has an input that a person can
+### then ask for if it is kilograms or pounds
+
+name = input("Hello there, what is your name? ")
+print(f"Thank you {name}, nice to meet you!")
+weight = input(f"{name}, how much do you weigh? ")
+str_weight = str(weight)
+print(f"Okay {name}, you weigh {weight}, is that in pounds (lbs) or kilograms (kg)? ")
+weight_type = input("Please, type L for pounds or K for kilograms: ")
+
+if weight_type == "L" or "l":
+    print(f"Thank you for that {name}.")
+    print(f"You are {weight} lbs., that is {float(weight) * 0.45} kg.")
+elif weight_type == "K" or "k":
+    print(f"Thank you for that {name}.")
+    print(f"You are {weight} kg, that is {float(weight) * 2.2} lbs.")
+else:
+    print(f"Oops, sorry that is an invalid response {name}.")
+    print(f"{name}, please type L for pounds or K for kilograms.")
+    print(input("L or K: "))
+##################################NOT WORKING#########################    
+weight = int(input('Weight: '))
+unit = input('(L)bs or (K)g: ')
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"You are {converted} kilos")
+else:
+    converted = weight / 0.45
+    print(f"You are {converted} pounds.")
+
+
+##### While loops
+
+##while condition:
+   ## ...
+## while a condition is true, continue this loop
+
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+print("DONE")
+
+
+## Fixed it with a while loop
+
+name = input("Hello there, what is your name? ")
+print(f"Thank you {name}, nice to meet you!")
+weight = input(f"{name}, how much do you weigh? ")
+str_weight = str(weight)
+print(f"Okay {name}, you weigh {weight}, is that in pounds (lbs) or kilograms (kg)? ")
+type = "a"
+type = input("Please, type L for pounds or K for kilograms: ")
+type = type.upper()
+
+if type == 'L':
+    print(f"Thank you for that {name}.")
+    print(f"You are {weight} lbs., that is {int(float(weight) * 0.45)} kg.")
+elif type == 'K':
+    print(f"Thank you for that {name}.")
+    print(f"You are {weight} kg, that is {int(float(weight) * 2.2)} lbs.")
+else:
+    while type != "L" or type != "K":
+        print(f"Oops, that is an invalid response {name}.")
+        print(f"{name}, please type L for pounds or K for kilograms.")
+        type = input("(L)bs or (K)g: ")
+        type = type.upper()
+        if type == 'L':
+            print(f"Thank you for that {name}.")
+            print(f"You are {weight} lbs., that is {int(float(weight) * 0.45)} kg.")
+            break;
+        elif type == 'K':
+            print(f"Thank you for that {name}.")
+            print(f"You are {weight} kg, that is {int(float(weight) * 2.2)} lbs.")
+            break;
+        else:
+            type = type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
