@@ -270,11 +270,48 @@ print(c)
 
 
 
+### Dictionaries in python
+## You want to put the following values into a dictionary
+# Name: John Smith
+# Email: john@gmail.com
+# Phone: 7283039332
+
+#customer = {}
+# the {} allow you to add a dictionary
+# each key should be unique. you cannot have multiple of a key
+
+customer = {
+    "name": "John Smith",
+    "age": 30,
+##  "age": 40, ## This would come up with an error, because it needs to be unique
+    "is verified": True
+}
+print(customer['name'])
+print(customer['age'])
+print(customer["is verified"])
+print(customer)
+## print(customer[0])
+### this does not work. as you can't find it by it's index
 
 
 
 
 
+customer = {
+    "name": "John Smith",
+    "age": 30,
+    "is verified": True
+}
+print(customer.get('birthdate'))
+## the .get() method will return "None" rather than an error
+## it helps when searching for the value
+print(customer.get('birthdate', "Jan 1 1980"))
+## if it returns no value, you can also assign a value,
+## if you put the common (,) after the first look up variable
+print(customer.get("name"))
+customer["name"] = "Jack Smith"
+print(customer.get("name"))
+## Here you can see you can update a value in the dictionary
 
 
 
