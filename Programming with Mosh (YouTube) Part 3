@@ -1,1 +1,33 @@
+## Exceptions
+### How to handle errors in your python programs
 
+age = int(input("Age: "))
+print(age)
+# if person does not enter a number, the program will crash and error will look like:
+# ValueError: invalid literal for int() with base 10: 'q'
+# Process finished with exit code 1
+
+
+## try / except
+## We can fix it by:
+try:
+    age = int(input("Age: "))
+    income = 20000
+    risk = income / age
+    print(age)
+    print(risk)
+except ZeroDivisionError:
+    print("Age cannot be 0.")
+except ValueError:
+    print("Invalid value.")
+    
+    
+    ### Comments
+## to add notes
+## Explain things about the code
+### as reminders to fix things or clean things up
+### or just a way to clearly communicate to other developers reading our code
+## Commands shouldn't be verbose or repetitive
+## Whys and hows, not whats
+## too much is bad
+print("sky is blue")
