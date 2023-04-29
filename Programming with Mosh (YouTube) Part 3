@@ -31,3 +31,43 @@ except ValueError:
 ## Whys and hows, not whats
 ## too much is bad
 print("sky is blue")
+
+
+
+##### Classes in Python
+## classes are very important in programming, not just python
+## we use classes to define new types
+## examples of basic types:
+## Numbers, Strings, Booleans
+## more complex types are:
+## Lists
+## Dictionaries
+### Use classes to define new types to model REAL CONCEPTS
+
+
+## Pascal naming convention
+## here classes are named capitalizing the first letter of each
+## word and not having underscores for instance
+## EmailContact
+## The two words become one but the first letter in each is capitalized
+class Point:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
