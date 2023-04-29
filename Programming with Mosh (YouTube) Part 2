@@ -49,13 +49,97 @@ quit - to quit
         
         
 
+command = ""
+started = False
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+            print("Car is already started!")
+        else:
+            started = True
+            print("Car started...")
+    elif  command == "stop":
+        if not started:
+            print("Car is already stopped!")
+        else:
+            print("Car stopped.")
+            started = False
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("Sorry, I don't understand that...")
 
 
 
+## while loops are to execute a block of code multiple times
+##### for loops
+## iterate (repeat) over items of a collection such as a string
+## because a string is a sequence of characters, so it looks like a collection
+# after the for, you define a variable, a loop variable
+# in each iteration, this variable will hold one item
+
+for item in 'Python':
+    print(item)
+
+
+## Define a list using square brackets, like so:
+## [] ... you can have a list of items, like products, names, emails, numbers.. so on
+
+for item in ['Mosh', 'John', 'Sarah']:
+    print(item)
+
+for num in [1, 2 , 3, 4]:
+    print(num)
+
+for numbers in range(10):
+    print(numbers)
+## 10 is not included
+
+for numbers in range(5, 10, 2):
+    print(numbers)
+# here the first number starts at 5, the last ends at 9 (before 10).
+# lastly it skips 2 numbers at a time.
 
 
 
+### to print the end result of sum of all prices in prices
+prices = [10, 20, 30]
 
+total = 0
+for price in prices:
+    total += price
+print(f"Total: {total}")
+
+## if you want a running total each time the price is calculated
+prices = [10, 20, 30]
+
+total = 0
+for price in prices:
+    total += price
+    print(f"Total: {total}")
+
+
+## Nested loops
+## adding one loop inside another loop
+## with these you can add coordinates like so:
+## (x, y) ----> (0, 0), (0, 1), (0, 2), (1, 0), (2, 0), (3, 0)
+
+for x in range(4):
+    for y in range (3):
+        print(f"({x}, {y})")
+
+## this executes as, the first iteration of the outer loop x is 0
+## the second line of code is a new loop, an inner loop, the first iteration y is 0
+## then it will print 0,0 in the terminal
+## then it will jump back up to the inner loop and go up to 2 (quits before hitting 3)
+## once it hits that limit, it will jump back to the outer loop and go through the same process
 
 
 
