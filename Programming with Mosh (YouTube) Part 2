@@ -247,6 +247,28 @@ print(numbers)
 
 
 
+#### Unpacking
+## can be used in tuples or lists
+
+coordinates = (1, 2, 3)
+## created a tuple
+## we want to say this:
+## coordinates[0]  coordinates[1] * coordinates[2]
+#x = coordinates[0]
+#y = coordinates[1]
+#z = coordinates[2]
+## Better to do this but unpacking is even better!
+x, y, z = coordinates
+print(x)
+print(y)
+print(z)
+coordinates2 = [55, 77, 57]
+a, b, c = coordinates2
+print(a)
+print(b)
+print(c)
+
+
 
 
 
