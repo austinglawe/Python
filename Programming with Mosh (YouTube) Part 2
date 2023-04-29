@@ -232,7 +232,18 @@ print(uniques)
 
 
 
-
+##### Tuples
+## Similar to list, to store a list of items
+## However they cannot be modified.
+## Immutable - cannot be mutated.
+## __dict__ these methods are called "Magic Methods"
+## They are more advanced
+## Tuples are good for when you want to make sure you don't
+## accidentally modify your list.
+numbers = (1, 2, 3)
+# number[0] = 10 will cause and error because it can't change the value in a truple
+# with tuples you can only use the .count() or .index() methods
+print(numbers)
 
 
 
