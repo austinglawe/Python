@@ -739,7 +739,22 @@ else:
 
 
 
-
+name = input("Hey there! What is your name? ")
+print(f"Awesome! Nice to meet you {name}")
+fav_color = input("What is your favorite color? ")
+print(f"Oh, cool! I love {fav_color}!")
+fav_temp = input("If you had to pick your favorite temperature (in degrees) what would it be? ")
+fav_temp = int(fav_temp)
+if fav_temp > 79:
+    print(f"Oh wow, {name}! That is wayyyyyy too hot for me.")
+elif fav_temp < 65:
+    print(f"That's too cold for me, {name}!")
+else:
+    print(f"Ohhhh wow, {name}! I like you. You have great taste!")
+fav_animal = input("What's your favorite animal? ")
+print(f"That's cool! I think {fav_animal}s are great, but my favorite animal is the sea cucumber!"
+      f"")
+print("I love you and hope you have a great day!")
 
 
 
