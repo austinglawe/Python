@@ -425,10 +425,23 @@ greet_user("John", "Smith")
 greet_user(last_name="Smith", first_name="John")
 
 
+calc_cost(total=50, shipping=5, discout=0.1)
+### here this imporves the readability of your code vs if you did this:
+## calc_cost(50, 5, 0.1)
+## because it gives keywords that can help others make sense of what the 
+## values represent.
 
 
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome aboard")
 
-
+#greet_user(first_name="John","Smith")
+## keyword arguments need to follow positional arguments other wise an
+## error code will appear like so:
+## SyntaxError: positional argument follows keyword argument
+greet_user("John", last_name="Smith")
+## This one executes
 
 
 
