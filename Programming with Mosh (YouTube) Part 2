@@ -340,7 +340,23 @@ print("Thank you! ",output)
 
 
 
-
+## Emoji Converter :)
+message = input(">")
+words = message.split(' ')
+### in the split() with the ' ' inside it's saying each time
+### there is a space, to split it into a list
+emojis = {
+    ":)": "😊",
+    ":'(": "😢",
+    ":(": "🙁",
+    ";)": "😉"
+}
+## a dictionary was created with emojis. In windows to get emojis
+## press the windows and period keys at the same time
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
 
 
 
