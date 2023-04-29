@@ -144,7 +144,32 @@ for x in range(4):
 
 
 
+### List Methods
+## List Functions
+### Operations that can be performed on a list
 
+numbers = [1, 5, 4, 6, 3, 4]
+
+numbers.append(13)
+## .append() will add the number to the end of the list
+
+numbers.insert(3,22)
+## .insert() will give you the option to add it in whatever position
+## you'd like. the first number is the position then a comma will
+## allow you to go to number you want to put in.
+
+numbers.pop(0)
+### .pop() will remove a value at the position you want to remove it from
+
+numbers.remove(4)
+## to remove an item, type .remove() and the number in which you
+## want to remove from the list
+## here, it only removes the first one it comes across.
+
+#numbers.clear()
+## the .clear() method, clears all items from the list.
+
+print(numbers)
 
 
 
