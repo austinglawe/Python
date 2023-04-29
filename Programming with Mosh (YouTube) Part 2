@@ -445,7 +445,16 @@ greet_user("John", last_name="Smith")
 
 
 
+### Return Statements
 
+def square(number):
+    return number * number
+
+
+result = square(3)
+print(result)
+result = square(45)
+print(result)
 
 
 
