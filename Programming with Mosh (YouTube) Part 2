@@ -360,7 +360,20 @@ print(output)
 
 
 
+### Functions
+#### as programs grow we need a better way to organize our code
+#### we need to break up our code into smaller, more manageable
+#### and more maintainable chucks. Which we call functions.
+## A function is a container for a few lines of code that perform a specific task
+## for example, buildin functions in python like: print() and input()
+## each of these functions know how to perform a specific task
+def greet_user():
+## def is used as "define", python interpreter knows you are defining a function
+    print('Hi there!')
+    print('Welcome aboard')
 
+
+greet_user()
 
 
 
