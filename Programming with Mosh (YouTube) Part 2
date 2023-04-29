@@ -1,1 +1,71 @@
+## While loops continued
+i = 1
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print("Done")
+
+## Guessing Game
+secret_number = 7
+guess_count = 0
+guess_limit = 3
+guess_count_down = 3
+print('''The rules of the game are:
+You pick a number between 1-1000
+You have 3 guesses to get it right
+Good luck!''')
+while guess_count < guess_limit:
+    guess = int(input('Guess a number: '))
+    guess_count += 1
+    guess_count_down -= 1
+    print(f"Wrong... {guess_count_down} guess(es) left.")
+    if guess == secret_number:
+        print("YOU WON!")
+        break;
+else:
+    print('''
+Sorry, you lose.''')
+
+
+
+## Car Game
+command = ""
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("Car started...")
+    elif command == "stop":
+        print("Car stopped.")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break;
+    else:
+        print("Sorry I don't understand that..")
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
